@@ -1,45 +1,42 @@
-<p>reservation works!</p>
-
-<form class="row g-3">
+<!-- <p>reservation works!</p> -->
+<h2>ระบบจองโต๊ะอาหารออนไลน์</h2>
+<p class="text-danger">*ตัวแทนจองแค่คนเดียว</p>
+<form class="row g-3 mt-4">
     <div class="col-md-4">
-      <label for="validationDefault01" class="form-label">First name</label>
+      <label for="validationDefault01" class="form-label">ชื่อจริง</label>
       <input type="text" class="form-control" id="validationDefault01" value="" required>
     </div>
     <div class="col-md-4">
-      <label for="validationDefault02" class="form-label">Last name</label>
+      <label for="validationDefault02" class="form-label">นามสกุล</label>
       <input type="text" class="form-control" id="validationDefault02" value="" required>
     </div>
     <div class="col-md-4">
-      <label for="validationDefaultUsername" class="form-label">Username</label>
+      <label for="validationDefaultUsername" class="form-label">จำนวนกี่ท่าน</label>
       <div class="input-group">
-        <span class="input-group-text" id="inputGroupPrepend2">&#64;</span>
-        <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+        <input type="number" value="1" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
       </div>
     </div>
     <div class="col-md-6">
-      <label for="validationDefault03" class="form-label">City</label>
+      <label for="validationDefault03" class="form-label">เบอร์โทรติดต่อ</label>
       <input type="text" class="form-control" id="validationDefault03" required>
     </div>
     <div class="col-md-3">
-      <label for="validationDefault04" class="form-label">State</label>
-      <select class="form-select" id="validationDefault04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
+      <label for="validationDefault04" class="form-label">วันที่จอง</label>
+      <input type="date" class="form-control" id="validationDefault04" required>
     </div>
     <div class="col-md-3">
-      <label for="validationDefault05" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="validationDefault05" required>
+      <label for="validationDefault05" class="form-label">เวลา</label>
+      <input type="time" class="form-control" id="validationDefault05" required>
     </div>
     <div class="col-12">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
         <label class="form-check-label" for="invalidCheck2">
-          Agree to terms and conditions
+          ตรวจสอบความถูกต้องแล้วเรียบร้อย
         </label>
       </div>
     </div>
     <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
+      <button class="btn btn-primary" type="submit">ยืนยันการจอง</button>
     </div>
   </form>
